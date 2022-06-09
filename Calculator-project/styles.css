@@ -1,0 +1,64 @@
+/* *,*::before, *::after{
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+} */
+
+
+/* my background */
+
+body{
+    background-image: url("https://news.cgtn.com/news/7a596a4e346b544d33496a4e30556a4d33496a4e31457a6333566d54/img/e9ab7a0b17be41238efd5bb7122febb1/e9ab7a0b17be41238efd5bb7122febb1.jpg");
+
+
+}
+
+
+/* getting all buttons and positioning them */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+     /* fill 100% of the space all the time  */
+   
+     grid-template-columns: repeat(4, 100px);
+     /* grid-template-rows: minmax(120px,auto) repeat (5,100px); */
+    /* auto for the system to be as large as it needs to be  */
+
+}
+
+.grid-container > button {
+    font-size: 2rem;
+    border: 2px black;
+    outline: black;
+    border: 1px solid rgb(215, 132, 250) ;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 /-1;
+    background: rgb(252, 252, 252);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid aqua;
+}
+
+.output > .previous-operand{
+
+    color: blue;
+    font-size: 1rem;
+}
+
+.output > .current-operand{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+
